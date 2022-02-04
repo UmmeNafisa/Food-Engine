@@ -1,0 +1,28 @@
+.step-col{
+   height: 210px;
+ 
+}
+.step-row{
+    margin-top: -100px;
+}
+.number{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 100px;
+    position: absolute;
+    top: -30px;
+    right: -10px;
+    color: #fff;
+    opacity: 0.03;
+}
+.steps{
+    display: inline-block;
+    color: #D8AB37;
+    font-size: 14px;
+    margin-top: 30px;
+    margin-bottom: 12px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+.step-icon{
+    color: #D8AB37;
+}

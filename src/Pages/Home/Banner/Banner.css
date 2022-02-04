@@ -1,0 +1,36 @@
+.banner-bg{
+background-image: url('../../../Images/banner-img.jpg');
+background-size: cover;
+height: 100vh;
+}
+.banner-header{
+font-size: 80px;
+color: white;
+text-align: start;
+}
+.header-title{
+    text-align: center;
+    color: whitesmoke;
+    font-size: 22px;
+}
+.title-p{
+    text-align: start;
+    font-size: 30px;
+    color: rgb(138, 238, 138);
+}
+.banner-des{
+    padding-top: 150px;
+    padding-left: 50px;
+}
+.header-font{
+    font-family: 'Cormorant SC', serif;
+}
+.regular-font{
+    font-family: 'Montserrat', sans-serif;
+}
+.second-header-font{
+    font-family: 'Cormorant Garamond', serif;
+}
+.stylish-font{
+    font-family: 'Cormorant Upright', serif;
+}
