@@ -10,7 +10,7 @@ const NavHeader = () => {
     const { user, logOut } = useAuth();
     return (
         <>
-            <Navbar sticky="top" className="nav-bg " collapseOnSelect expand="lg">
+            <Navbar className="nav-bg " collapseOnSelect expand="lg">
                 <Container>
                     <Navbar.Brand href="#home" className='d-flex align-items-center'>
                         <img
@@ -25,8 +25,9 @@ const NavHeader = () => {
                     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                     <Navbar.Collapse className="justify-content-end nav-link" id="responsive-navbar-nav">
                         <Nav.Link as={Link} to="/home" className="text-white fw-bold header-front" >HOME</Nav.Link>
-                        <Nav.Link as={HashLink} to="/home#about" className="text-white fw-bold header-front" >ABOUT</Nav.Link>
-                        <Nav.Link as={HashLink} to="/home#packages" className="text-white fw-bold header-front" >PACKAGES</Nav.Link>
+                        <Nav.Link as={HashLink} to="/home#steps" className="text-white fw-bold header-front" >ORDER-STEPS</Nav.Link>
+                        <Nav.Link as={HashLink} to="/home#foods" className="text-white fw-bold header-front" >FOODS</Nav.Link>
+                        <Nav.Link as={HashLink} to="/home#offers" className="text-white fw-bold header-front" >OFFERS</Nav.Link>
                         <Nav.Link as={Link} to="/clientDashboard" className="text-white fw-bold header-front" >CLIENT SIDE</Nav.Link>
 
                         <Nav.Link as={Link} to="/adminDashboard" className="text-white fw-bold header-front"> ADMIN SIDE </Nav.Link>

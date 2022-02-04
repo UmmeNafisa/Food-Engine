@@ -7,7 +7,7 @@ import { faBiking, faHamburger, faMapMarkerAlt } from '@fortawesome/free-solid-s
 
 const Step = () => {
     return (
-        <div>
+        <div id='steps'>
             <Container>
                 <Row className='step-row g-3'>
                     <Col>

@@ -1,6 +1,7 @@
 import React from 'react';
-import Footer from '../../Shared/Footer/Footer';
 import Banner from '../Banner/Banner';
+import FoodCard from '../FoodCard/FoodCard';
+import Offers from '../Offers/Offers';
 import Step from '../Step/Step';
 
 const Home = () => {
@@ -8,7 +9,9 @@ const Home = () => {
         <div>
             <Banner></Banner>
             <Step></Step>
-            <Footer></Footer>
+            <Offers></Offers>
+            <FoodCard></FoodCard>
+
         </div>
     );
 };

@@ -9,6 +9,8 @@ import AuthProvider from './Contexts/AuthProvider'
 import Home from "./Pages/Home/Home/Home";
 import NavHeader from "./Pages/Shared/NavHeader/NavHeader";
 import Login from "./Pages/Login/Login/Login";
+import Footer from "./Pages/Shared/Footer/Footer";
+import AddFoods from "./Pages/AdminPanel/AddFoods/AddFoods";
 
 function App() {
   return (
@@ -42,10 +44,13 @@ function App() {
             </Route>
             <Route path="/clientLogin" element={<Login />}>
             </Route>
+            <Route path="/addFoods" element={<AddFoods />}>
+            </Route>
 
             <Route exact path="/" element={<Home />}>
             </Route>
           </Routes>
+          <Footer></Footer>
         </Router>
       </AuthProvider>
     </div>
