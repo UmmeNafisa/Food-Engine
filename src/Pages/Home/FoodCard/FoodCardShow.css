@@ -9,6 +9,8 @@
     transition: .5s ease;
     backface-visibility: hidden;
     border-radius: 15%;
+    width: 350px;
+    height: 250px;
   }
   
   .middle {
@@ -22,18 +24,18 @@
     text-align: center;
   }
   
-  .container:hover .image {
-    opacity: 0.3;
+  .container-img:hover .image {
+    opacity: 0.4;
   }
   
-  .container:hover .middle {
+  .container-img:hover .middle {
     opacity: 1;
   }
   
   .text {
     background-color: transparent;
     color: red;
-    font-size: 30px;
+    font-size: 35px;
     font-weight: bolder;
     padding: 16px 32px;
     font-family: 'Solway', serif;

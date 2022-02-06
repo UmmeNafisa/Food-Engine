@@ -48,7 +48,7 @@ const Offers = () => {
                 />
 
                 <Carousel.Caption className="offer-caption">
-                    <h1 className="offer-title fw-bold header-font text-start offer-header w-75"> Weekend Offer for you <br /> <span className='common-clr'>Get 10% Off </span> </h1>
+                    <h1 className="offer-title fw-bold header-font text-start offer-header w-75 ms-0"> Weekend Offer only for you <br /> <span className='common-clr'>Get 10% Off </span> </h1>
                     <p className='stylish-font fs-4 text-start'>Get It Delivered Right To Your Door. </p>
                     <p className='regular-font fs-6 text-muted text-start w-50 pb-5'>If you order food delivery from us on weekend then we have a gift - 10% discount for you for any food. using coupon-"weekend-10". </p>
                 </Carousel.Caption>

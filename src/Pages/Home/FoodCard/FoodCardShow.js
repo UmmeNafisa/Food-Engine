@@ -24,18 +24,18 @@ const FoodCardShow = (props) => {
                         </Card.Text>
                         <div className="d-flex justify-content-between align-items-center">
                             <h2 className="stylish-font fw-bold price"> <span className='icon-clock'>$</span>  {foodPrice}  </h2>
-                            <div className="d-flex justify-content-between align-items-center">
-                                <FontAwesomeIcon icon={faClock} className="icon-clock" size='2x' />
-                                <div>
-                                    <p>Available</p>
-                                    <p> {startTime} -- {endTime}  </p>
 
-                                </div>
+                            <div className="d-flex justify-content-between align-items-center ">
+                                <FontAwesomeIcon icon={faClock} className="icon-clock" size='2x' />
+                                <p> {startTime} -- {endTime}  </p>
+                            </div>
+                            <div>
+                                <Link to={`/placeOrder/${_id}`}>
+                                    <Button className="btn-all fw-bold px-3 py-2 btn text-align"  > Place Order</Button>
+                                </Link>
                             </div>
                         </div>
-                        <Link to={`/placeOrder/${_id}`}>
-                            <Button className="btn-all fw-bold px-3 py-2 btn text-align"  > Place Order</Button>
-                        </Link>
+
                     </Card.Body>
                 </Card>
             </Col>
