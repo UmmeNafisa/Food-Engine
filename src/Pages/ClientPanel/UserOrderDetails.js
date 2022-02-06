@@ -18,18 +18,20 @@ const UserOrderDetails = (props) => {
 
     //delete an item 
     const handleDelete = (id) => {
-        // console.log(id)
-        fetch(`https://agile-reaches-78451.herokuapp.com/orderItems/${id}`, {
-            method: "DELETE",
-        })
-            .then((res) => res.json())
-            .then((data) => {
-                if (data.deletedCount > 0) {
-                    alert('Deleted successfully')
-                    const remainingItems = orderItems.filter(item => item._id !== id)
-                    setOrderItems(remainingItems)
-                }
-            });
+        const proceed = window.confirm("Are sure  to delete it ?")
+        if (proceed) {
+            fetch(`https://agile-reaches-78451.herokuapp.com/orderItems/${id}`, {
+                method: "DELETE",
+            })
+                .then((res) => res.json())
+                .then((data) => {
+                    if (data.deletedCount > 0) {
+                        alert('Deleted successfully')
+                        const remainingItems = orderItems.filter(item => item._id !== id)
+                        setOrderItems(remainingItems)
+                    }
+                });
+        }
     }
 
     // Confirm ordering btn to post the data 
