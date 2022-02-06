@@ -28,8 +28,11 @@ const NavHeader = () => {
                     <Nav.Link as={HashLink} to="/home#steps" className="text-white fw-bold header-front" >ORDER-STEPS</Nav.Link>
                     <Nav.Link as={HashLink} to="/home#foods" className="text-white fw-bold header-front" >FOODS</Nav.Link>
                     <Nav.Link as={HashLink} to="/home#offers" className="text-white fw-bold header-front" >OFFERS</Nav.Link>
-                    <Nav.Link as={Link} to="/clientDashboard" className="text-white fw-bold header-front" >DashBoard</Nav.Link>
 
+                    {(user?.email || user?.name) && <div>
+                        <Nav.Link as={Link} to="/clientDashboard" className="text-white fw-bold header-front" >DASHBOARD</Nav.Link>
+                    </div>
+                    }
                     {/* <Nav.Link as={Link} to="/adminDashboard" className="text-white fw-bold header-front"> ADMIN SIDE </Nav.Link> */}
 
                     {user?.email || user?.name ?
