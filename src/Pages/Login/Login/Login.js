@@ -8,14 +8,14 @@ import './login.css';
 const Login = () => {
     const { signInUsingGoogle } = useAuth()
     const location = useLocation();
-    const history = useNavigate();
-    const redirect_url = location.state?.from || '/home';
+    const navigate = useNavigate();
+    const destination = location.state?.from || '/';
 
 
     const handleGoogleLogin = () => {
         signInUsingGoogle()
             .then(result => {
-                history.push(redirect_url);
+                navigate(destination);
             })
     }
     return (

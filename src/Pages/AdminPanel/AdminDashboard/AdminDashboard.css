@@ -1,0 +1,25 @@
+.admin-area {
+    background:rgba(253, 240, 221, 0.371);
+    color: black;
+    height: 100vh;
+  }
+  .admin-container {
+    overflow-x: hidden;
+  }
+  .admin-menu {
+    list-style: none;
+    cursor: pointer;
+    text-align: start;
+  }
+  .admin-menu:hover {
+    color: blue;
+  }
+
+  /* media query  */
+@media only screen and (max-width: 600px) {
+  .admin-area{
+     height: 100%;
+     padding-bottom: 50px;  
+    }
+   
+}

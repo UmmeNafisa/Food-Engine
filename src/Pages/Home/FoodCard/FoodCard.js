@@ -6,7 +6,7 @@ const FoodCard = () => {
     const [allFoods, setAllFoods] = useState([])
 
     useEffect(() => {
-        fetch('http://localhost:5000/addFoods')
+        fetch('https://agile-reaches-78451.herokuapp.com/addFoods')
             .then(res => res.json())
             .then(data => setAllFoods(data))
     }, [])
@@ -16,8 +16,8 @@ const FoodCard = () => {
 
             <Container className="pb-5">
                 <div>
-                    <h4 className="fw-bolder pt-5 text-center second-header-font"> features</h4>
-                    <h1 className="text-align mb-3 header-font text-center">Available Food Items </h1>
+                    <h4 className="pt-5 text-center stylish-font section-title"> ----- foods ----- </h4>
+                    <h1 className="text-align mb-3 header-font text-center section-head">Available Food Items </h1>
                 </div>
                 {
                     allFoods.length === 0 ? <Spinner animation="border" variant="warning" /> :

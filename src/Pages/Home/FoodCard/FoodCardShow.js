@@ -2,10 +2,11 @@ import { faClock } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React from 'react';
 import { Button, Card, Col } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 import './FoodCardShow.css'
 
 const FoodCardShow = (props) => {
-    const { FoodName, RestaurantName, startTime, endTime, description, foodPrice, imgUrl } = props.foods
+    const { _id, FoodName, RestaurantName, startTime, endTime, description, foodPrice, imgUrl } = props.foods
     return (
         <div>
             <Col>
@@ -32,7 +33,9 @@ const FoodCardShow = (props) => {
                                 </div>
                             </div>
                         </div>
-                        <Button variant="primary">Details</Button>
+                        <Link to={`/placeOrder/${_id}`}>
+                            <Button className="btn-all fw-bold px-3 py-2 btn text-align"  > Place Order</Button>
+                        </Link>
                     </Card.Body>
                 </Card>
             </Col>

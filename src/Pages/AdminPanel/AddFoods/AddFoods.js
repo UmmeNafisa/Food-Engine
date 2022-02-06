@@ -5,7 +5,7 @@ const AddFoods = () => {
     const { register, handleSubmit, formState: { errors } } = useForm();
     const onSubmit = data => {
 
-        fetch('http://localhost:5000/addFoods', {
+        fetch('https://agile-reaches-78451.herokuapp.com/addFoods', {
             method: "POST",
             headers: { "content-type": "application/json" },
             body: JSON.stringify(data)

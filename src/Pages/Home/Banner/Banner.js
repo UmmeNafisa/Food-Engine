@@ -11,8 +11,8 @@ const Banner = () => {
                 </video>
             </div> */}
             <div className='banner-des'>
-                <h1 className='banner-header header-font'> We Deliver The <br /> Taste Of Life </h1>
-                <p className='title-p stylish-font'> Get It Delivered Right To Your Door.</p>
+                <h1 className='banner-header header-font'> We Concern The <br /> Taste Of Life </h1>
+                <p className='title-p stylish-font'> Delivered your favorite food at your doorsteps</p>
             </div>
         </div>
     );
